@@ -6,7 +6,8 @@
 //Task-6: Temporary variables are removed.
 T//ask-7: Eliminates the ‘done’ control-flow variable. Adds better response for search operation.
 //Task-8: Simplifies the logic behind the count operation.
-//Task-9:	Adds handling for case when user enters invalid arguments
+//Task-9: Adds handling for case when user enters invalid arguments.
+//Task-10: Add more comments and makes more naming improvements.
 
 
 import java.io.*;
@@ -19,6 +20,7 @@ public class StudentList {
 //		Check arguments
         if (args[0].equals("a")) {
             System.out.println("Loading data ...");
+            // :) :) :)
             try {
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")));
                 String readLine = bufferedReader.readLine();
@@ -31,6 +33,7 @@ public class StudentList {
             System.out.println("Data Loaded.");
         } else if (args[0].equals("r")) {
             System.out.println("Loading data ...");
+            //:D :D :D
             try {
                 BufferedReader s = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")));
                 String readline = s.readLine();
@@ -44,6 +47,7 @@ public class StudentList {
             System.out.println("Data Loaded.");
         } else if (args[0].contains("+")) {
             System.out.println("Loading data ...");
+            //:( :( :(
             try {
                 BufferedWriter s = new BufferedWriter(new FileWriter("students.txt", true));
                 String t = args[0].substring(1);
@@ -59,6 +63,7 @@ public class StudentList {
             System.out.println("Data Loaded.");
         } else if (args[0].contains("?")) {
             System.out.println("Loading data ...");
+            //:| :| :|
             try {
                 BufferedReader s = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")));
                 String r = s.readLine();
@@ -75,6 +80,7 @@ public class StudentList {
             System.out.println("Data Loaded.");
         } else if (args[0].contains("c")) {
             System.out.println("Loading data ...");
+            //:B :B :B
             try {
                 BufferedReader s = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")));
                 String D = s.readLine();

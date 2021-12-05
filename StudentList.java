@@ -5,6 +5,8 @@
 //Task-5: Replaces string literals with constants, storing those constants in a new class called Constants java done.
 //Task-6: Temporary variables are removed.
 T//ask-7: Eliminates the ‘done’ control-flow variable. Adds better response for search operation.
+//Task-8: Simplifies the logic behind the count operation.
+
 
 import java.io.*;
 import java.text.*;

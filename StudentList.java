@@ -1,5 +1,6 @@
 //Task-1: Indentation done.
 //Task-2: Wrong argument correction done.
+//Task-3: Improvements to variable names done.
 
 import java.io.*;
 import java.text.*;
@@ -12,12 +13,12 @@ public class StudentList {
         if (args[0].equals("a")) {
             System.out.println("Loading data ...");
             try {
-                BufferedReader s = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")));
-                String r = s.readLine();
-                String i[] = r.split(",");
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")));
+                String readLine = bufferedReader.readLine();
+                String i[] = readLine.split(",");
                 for (String j : i) {
                     System.out.println(j);
-                }
+
             } catch (Exception e) {
             }
             System.out.println("Data Loaded.");
@@ -25,9 +26,9 @@ public class StudentList {
             System.out.println("Loading data ...");
             try {
                 BufferedReader s = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")));
-                String r = s.readLine();
-                System.out.println(r);
-                String i[] = r.split(",");
+                String readline = s.readLine();
+                System.out.println(readline);
+                String i[] = readline.split(",");
                 Random x = new Random();
                 int y = x.nextInt();
                 System.out.println(i[y]);

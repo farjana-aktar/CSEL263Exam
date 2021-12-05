@@ -2,7 +2,8 @@
 //Task-2: Wrong argument correction done.
 //Task-3: Improvements to variable names done.
 //Task-4: Refactors duplicate file read and write logic into methods done.
-//Task-5:	Replaces string literals with constants, storing those constants in a new class called Constants java done.
+//Task-5: Replaces string literals with constants, storing those constants in a new class called Constants java done.
+//Task-6: Temporary variables are removed.
 
 import java.io.*;
 import java.text.*;
@@ -58,12 +59,11 @@ public class StudentList {
                 BufferedReader s = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")));
                 String r = s.readLine();
                 String i[] = r.split(",");
-                boolean done = false;
+
                 String t = args[0].substring(1);
                 for (int idx = 0; idx < i.length && !done; idx++) {
                     if (i[idx].equals(t)) {
                         System.out.println("We found it!");
-                        done = true;
                     }
                 }
             } catch (Exception e) {

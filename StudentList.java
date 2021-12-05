@@ -1,6 +1,7 @@
 //Task-1: Indentation done.
 //Task-2: Wrong argument correction done.
 //Task-3: Improvements to variable names done.
+//Task-4: Refactors duplicate file read and write logic into methods done.
 
 import java.io.*;
 import java.text.*;

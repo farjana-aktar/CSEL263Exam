@@ -5,6 +5,8 @@ public class StudentList {
 	public static void main(String[] args) {
 
 //		Check arguments
+//      Original File
+
 		if(args[0].equals("a")) {
 			System.out.println("Loading data ...");			
 			try {

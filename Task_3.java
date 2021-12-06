@@ -5,10 +5,8 @@ import java.util.*;
 public class StudentList {
     public static void main(String[] args) {
 
-//		  Check arguments
-//        Original File
-//        indentation
-        // change variable name
+//        Check arguments
+//        change variable name
         if (args[0].equals("a")) {
 
             System.out.println("Loading data ...");
